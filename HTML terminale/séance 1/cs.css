@@ -1,0 +1,151 @@
+﻿@font-face {
+  font-family: Prototype; 
+  src: url('Prototype.ttf'); 
+} 
+hr{
+/*height:10px;
+background-color: blue;
+border-radius:50%;
+border:solid;
+border-color:blue;*/
+}
+*{
+	font-size:14px;
+	font-family:Prototype;
+	/*border:solid;
+	border-color:rgb(255,255,255);
+	border-width:1px;*/
+	text-align:justify;
+}
+.titre{
+	font-size:45px;
+	float:center;
+	text-decoration:underline;
+	text-align:center;
+}
+p{
+	font-size:22px;
+	color:rgb(255,255,255);
+}
+body{
+	background-color:rgb(0,0,0);
+}
+.ccentreol{
+	text-align:center;
+}
+.cetreol{
+	text-align:center;
+	width:503px;
+	margin: 0 auto;
+}
+ol {
+	counter-reset: menu;/* on initialise et nomme un compteur */
+	text-align:center;
+	width:502px;
+} 
+.menucentre{
+	text-align:right;
+	width:501px;
+}
+li {
+	list-style-type: none;
+	counter-increment: menu; /* on incrémente le compteur à chaque nouveau li */
+	margin-bottom: 15px;
+	color:white;
+	text-align:left;
+	font-size:31px;
+	color:red;
+	width:500px;
+}
+li:hover{
+	color:rgba(255,0,0,0.7);
+}
+li:before {
+	content: counter(menu); /* on affiche le compteur */
+	padding: 0 20px 5px;
+	margin-right: 8px;
+	vertical-align: top;
+	background: #678;
+	border-radius: 60px;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;		
+}
+
+.cube1{
+	background: linear-gradient(90deg, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d);
+	background-size: 1800% 1800%;
+	-webkit-animation: rainbow 3s ease infinite;
+	animation: rainbow 2s ease infinite;
+	height:100px;
+	width:100px;
+	border-radius:15%;
+}
+.cube2{
+	background: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+	background-size: 1800% 1800%;
+	-webkit-animation: rainbow 2s ease infinite;
+	animation: rainbow 2s ease infinite;
+	height:100px;
+	width:100px;
+	border-radius:15%;
+}
+img{
+	border-radius:10%;
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+.divtt{
+	float:center;
+}
+.divtxt{
+	width: 65%;
+	margin: 15px 100px 50px;
+	float:left;
+}
+.droite{
+	float:right;
+	margin:0px 0px 5px 0px;
+}
+.gauche{
+	float:left;
+	margin:15px 0px 0px 0px;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+#cartemere, #pro, #graph, #ram,#hdd{
+	font-size:35px;
+	text-decoration:underline;
+}
+.divimgcartemere, .divimgpro, .divimggraph, .divimgram, .divimghdd, .divimgssd{
+	text-align:center;
+}
+.imgcartemere{
+	width:500px;
+}
+.imgpro {
+	width:350px;
+}
+.imggraph {
+	width:500px;
+	overflow:hidden
+}
+.imgram {
+	width:400px;
+}
+.imghdd {
+	width:400px;
+}
+.imgssd {
+	width:400px;
+}
