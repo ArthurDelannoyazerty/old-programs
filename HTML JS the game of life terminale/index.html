@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link src="script.js"/>
+	<link rel="stylesheet" type="text/css" href="c.css"/>
+	<title>The Game of Life</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
+</head>
+<body>
+<div class="tt1">
+	<div class="tt2">
+		<div id="test" class="divtitre">
+			<p align="center" class="text1" data-text="The Game of Life">The Game of Life</p>
+		</div>
+		<img align="left" src="img/game_of_life_pulsar.gif"> 
+		<img align="right" src="img/game_of_life_pulsar.gif"> 
+		<script class="script" src="script.js"/></script>
+		<p class="titre_regle">Histoire</p><br/>
+		<p>Le jeu de la vie est un automate cellulaire imaginé en 1970 par John Horton Conway, sur une idée de John Von Neumann.
+           Ce n’est pas réellement un jeu car il n’y a pas de joueur, ce sont des règles pré établies qui génèrent ou désintègrent des cellules sur une grille à deux dimensions. L'objectif est la survie et la croissance d'une population représentée par des des cellules tant au sens biologique que topographique...</p><br/>
+		<p class="titre_regle">Règles</p><br/>
+		<p>Une cellule vivante est représentée par une case jaune. Une case grise/blanche signifie qu'il n'y a pas de cellule.<br/>L'état de l'automate à l'étape n est défini en fonction de son état à l'étape n − 1.<br/>
+		L'évolution de l'état d'une cellule dépend de l'état de ses 8 plus proches voisines :</p><br/>
+		<ul>
+			<li class="li_no">=> Si une cellule a 0 ou 1 voisine, elle meurt.</li>
+			<li class="li_no">=> Si une cellule a 2 ou 3 voisines, elle continue de vivre.</li>
+			<li class="li_no">=> Si une cellule a 4 cellule ou plus, elle meurt (surpopulation).</li>
+			<li class="li_no">=> Si une case vide a trois cellules vivantes, alors elle devient une cellule vivante.</li>
+		</ul><br/>
+		<a href="#">Jouer</a>
+		<p>Avec ces 4 règles, il est possible de créer des combinaisons étonnantes :<br/><br/>
+			<ol class="olmenu">
+			<div class="partmenu">
+				<p class="titre_menu">I- Les structures stables</p><br/>
+				<ul>
+					<li>
+						Le bloc
+						<div class="img_liste">
+							<img src="img/stable/bloc.gif">
+						</div>
+					</li>
+					<li>
+						La ruche
+						<div class="img_liste">
+						<img src="img/stable/ruche.gif">
+						</div>
+					</li>
+					<li>
+						La barge
+						<div class="img_liste">
+						<img src="img/stable/barge.gif">
+						</div>
+					</li>
+					<li>
+						La longue barge
+						<div class="img_liste">
+						<img src="img/stable/longue_barge.gif">
+						</div>
+					</li>
+					<li>
+						Le bateau
+						<div class="img_liste">
+						<img src="img/stable/bateau.gif">
+						</div>
+					</li>
+					<li>
+						Le canoë
+						<div class="img_liste">
+						<img src="img/stable/canoe.gif">
+						</div>
+					</li>
+					<li>
+						Le long canoë
+						<div class="img_liste">
+						<img src="img/stable/long_canoe.gif">
+						</div>
+					</li>
+					<li>
+						L'hameçon
+						<div class="img_liste">
+						<img src="img/stable/hamecon.gif">
+						</div>
+					</li>
+					<li>
+						Le double hameçon
+						<div class="img_liste">
+						<img src="img/stable/double_hamecon.gif">
+						</div>
+					</li>
+					<li>
+						Le navire
+						<div class="img_liste">
+						<img src="img/stable/navire.gif">
+						</div>
+					</li>
+					<li>
+						Le long navire
+						<div class="img_liste">
+						<img src="img/stable/long_navire.gif">
+						</div>
+					</li>
+					<li>
+						Le porte-avion
+						<div class="img_liste">
+						<img src="img/stable/porte_avion.gif">
+						</div>
+					</li>
+					<li>
+						Le serpent
+						<div class="img_liste">
+						<img src="img/stable/serpent.gif">
+						</div>
+					</li>
+					<li>
+						Le tube
+						<div class="img_liste">
+						<img src="img/stable/tube.gif">
+						</div>
+					</li>
+					<li>
+						L'agar
+						<div class="img_liste">
+						<img src="img/stable/agar.png">
+						</div>
+					</li>
+					<li>
+						La mare
+						<div class="img_liste">
+						<img src="img/stable/mare.png">
+						</div>
+					</li>
+					<li>
+						Le pain
+						<div class="img_liste">
+						<img src="img/stable/pain.png">
+						</div>
+					</li>
+				</ul>
+				</div>
+				<div class="partmenu">
+				<p class="titre_menu">II- Les oscillateurs</p><br/>
+				<ul>
+					<li>
+						Le blinker
+						<div class="img_liste">
+						<img src="img/mstable/blinker.gif">
+						</div>
+					</li>
+					<li>
+						La grenouille
+						<div class="img_liste">
+						<img src="img/mstable/grenouille.gif">
+						</div>
+					</li>
+					<li>
+						Le pentadécathlon
+						<div class="img_liste">
+						<img src="img/mstable/15.gif">
+						</div>
+					</li>
+					<li>
+						La croix
+						<div class="img_liste">
+						<img src="img/mstable/croix.gif">
+						</div>
+					</li>
+					<li>
+						L'étoile
+						<div class="img_liste">
+						<img src="img/mstable/etoile.gif">
+						</div>
+					</li>
+					<li>
+						La galaxie
+						<div class="img_liste">
+						<img src="img/mstable/galaxie.gif">
+						</div>
+					</li>
+					<li>
+						L'horloge
+						<div class="img_liste">
+						<img src="img/mstable/horloge.gif">
+						</div>
+					</li>
+					<li>
+						L'octogone
+						<div class="img_liste">
+						<img src="img/mstable/octogone.gif">
+						</div>
+					</li>
+					<li>
+						Les deux blocks
+						<div class="img_liste">
+						<img src="img/mstable/2block.png">
+						</div>
+					</li>
+					<li>
+						Le beacon
+						<div class="img_liste">
+						<img src="img/mstable/beacon.gif">
+						</div>
+					</li>
+					<li>
+						Le pulsar
+						<div class="img_liste">
+						<img src="img/mstable/pulsar.gif">
+						</div>
+					</li>
+				</ul>
+				</div>
+				<div class="partmenu">
+				<p class="titre_menu">III- Les vaisseaux</p><br/>
+				<ul>
+					<li>
+						Le planeur
+						<div class="img_liste">
+						<img src="img/vaisseau/planeur.gif">
+						</div>
+					</li>
+					<li>
+						Le petit vaisseau
+						<div class="img_liste">
+						<img src="img/vaisseau/LWSS.gif">
+						</div>
+					</li>
+					<li>
+						Le vaisseau moyen
+						<div class="img_liste">
+						<img src="img/vaisseau/MWSS.gif">
+						</div>
+					</li>
+					<li>
+						Le grand vaisseau
+						<div class="img_liste">
+						<img src="img/vaisseau/HWSS.gif">
+						</div>
+					</li>
+				</ul>
+				</div>
+				<div class="partmenu">
+				<p class="titre_menu">IV- Les machines complexes</p><br/>
+				<ul>
+					<li>
+						Le spacefiller
+						<div class="img_liste">
+						<img src="img/cplx/spacefiller.jpg">
+						</div>
+					</li>
+					<li>
+						Le glider gun
+						<div class="img_liste">
+						<img src="img/cplx/glider_gun.png">
+						</div>
+					</li>
+					<li>
+						Le puffer train
+						<div class="img_liste">
+						<img src="img/cplx/puffer_train.gif">
+						</div>
+					</li>
+				</ul>
+				</div>
+			</ol>
+	
+		</p>
+	</div>
+</div>
+</body>
+</html>

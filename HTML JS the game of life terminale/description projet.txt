@@ -1,0 +1,22 @@
+﻿the game of life:
+
+entrées:
+mise en place des cellules
+
+traitement:
+passage à la génération suivante
+
+stocker:
+pressets au début et à la fin = bouton 'enregistrer'
+
+sortir:
+affichage
+
+
+idées:
+-compteur de génération
+-compteur de cellules
+-ajouter/supprimer des cellules en cliquant sur une case
+-surbrillance de la case lorsque sélectionée
+-case 'clear'
+-afficher fps
